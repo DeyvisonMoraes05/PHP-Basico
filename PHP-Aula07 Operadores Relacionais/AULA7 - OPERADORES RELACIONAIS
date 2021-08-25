@@ -1,0 +1,47 @@
+OPERADORES RELACIONAIS {
+    MAIOR           $A > $B
+    MENOR           $A < $B
+    MAIOR OU IGUAL  $A >= $B 
+    MENOR OU IGUAL  $A <= $B
+    DIFERENTE       $A <> $B $A != $B
+    IGUAL           $A == $B
+    IDÊNTICO        $ === $B (IGUAL E DO MESMO TIPO)
+}
+
+OPERADOR  UNÁRIO {
+    SINTAXE {
+        EXPRESSÃO ? VERDADEIRO:FALSO
+        $MAIOR = $A > $B?$A:$B
+        $R = $A > $B?$A+$B:$A-$B
+        $SIT = $M < 7?"RECUPERAÇÃO":"APROVADO"
+
+    }
+}
+
+OPERADORES LÓGICOS {
+    /* TABELA VERDADE &&/AND .E.
+        P | Q | P && Q | 
+        V | V |    V   |
+        V | F |    F   |
+        F | V |    F   |
+        F | F |    F   |    
+
+        TABELA VERDADE ||/OR  .OU.
+        P | Q | P || Q | 
+        V | V |    V   |
+        V | F |    V   |
+        F | V |    V   |
+        F | F |    F   |
+
+        TABELA VERDADE ^ .XOU. "OU EXCLUSIVO"
+        P | Q | P XOU Q | "QUERO QUE A PAULA SEJA FELIZ, OU EXCLUSIVAMENTE A QUEZIA"
+        V | V |    F    | "PODE SER A P OU A Q, MAS NÃO AS DUAS, ENTÃO É F"
+        V | F |    V    |
+        F | V |    V    |
+        F | F |    F    |
+
+        TABELA VERDADE ! .NAO.
+        P | !P | 
+        V | F  |
+        F | V  |
+}
