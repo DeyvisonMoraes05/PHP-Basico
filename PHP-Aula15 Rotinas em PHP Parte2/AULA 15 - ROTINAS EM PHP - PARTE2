@@ -1,0 +1,55 @@
+Criando funções e procedimentos em PHP com passagem de parâmetros por valor e passagem de parâmetros por referência.
+
+Aprenda como utilizar as instruções include, require, include_once, require_once para incluir arquivos externos em seu script PHP.
+
+PASSAGEM POR VALOR {
+    function teste($d) {
+        $d = $d + 2;
+        echo $d; // print $d; = 5
+    }
+
+    $a = 3;
+    teste($a);
+    echo $a; // print $a; = 3
+}
+
+
+PASSAGEM POR REFERÊNCIA {
+    function teste(&$d) {
+        $d = $d + 2;
+        echo $d; // print $d; = 5
+    }
+
+    $a = 3;
+    teste($a);
+    echo $a; // print $a; = 5
+}
+
+
+Como utilizar rotinas externas?
+
+INCLUDE {
+    INCLUIR {
+        As outras funções dentro do programa funcionam caso haja erro no arquivo incluído.
+    }
+}
+
+REQUIRE {
+    REQUERIDO {
+        Não funciona nada, caso haja erro no arquivo requerido.
+    }
+}
+
+INCLUDE_ONCE {
+    INCLUIR {
+        As outras funções dentro do programa funcionam caso haja erro no arquivo incluído.
+        Se o arquivo não tiver sido carregado a primeira vez, ele irá carregar, ou seja, o _ONCE é CARREGAR APENAS 1 VEZ
+    }
+}
+
+REQUIRE_ONCE {
+    REQUERIDO {
+        Não funciona nada, caso haja erro no arquivo requerido.
+        Se o arquivo não tiver sido carregado a primeira vez, ele irá carregar, ou seja, o _ONCE é CARREGAR APENAS 1 VEZ
+    }
+}
